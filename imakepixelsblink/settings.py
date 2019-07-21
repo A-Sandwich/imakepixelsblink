@@ -73,22 +73,8 @@ WSGI_APPLICATION = 'imakepixelsblink.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-DATABASES=''
-if os.environ.get('ENVIRONMENT', 'DEVELOPMENT') == 'PRODUCTION':
-    db_from_env = dj_database_url.config(conn_max_age=500)
-    DATABASES['default'].update(db_from_env)
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ.get('DB_NAME', ''),
-            'USER': os.environ.get('DB_USER', ''),
-            'PASSWORD': os.environ.get('DB_PASS', ''),
-            'HOST': os.environ.get('DB_HOST', ''),
-            'PORT': os.environ.get('DB_PORT', ''),
-        }
-    }
-
+DATABASES = {}
+DATABASES['default'] = dj_database_url.config(conn_max_age=500)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
