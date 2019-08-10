@@ -9,16 +9,36 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="{% static 'portfolio/materialize/css/materialize.min.css' %}"  media="screen,projection"/>
+
+    <link type="text/css" rel="stylesheet" href="{% static 'portfolio/css/main.css' %}"  media="screen,projection"/>
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="https://kit.fontawesome.com/f0f26fd09f.js"></script>
 </head>
 
 <body>
-    <a href="https://github.com/A-Sandwich">GitHub</a>
-    <a href="https://twitter.com/A_Sandwich">Twitter</a>
-    <a href="https://www.linkedin.com/in/kyle-burkholder-9bb22613a/">LinkedIn</a>
-    <h1>HERE!</h1>
+    <div class="container">
+        <header>
+            <h1 class="header">Kyle Burkholder</h1>
+            <h2 class="header">I make pixels move.</h2>
+            <h2 class="header">usually with Python, C#, and JavaScript.</h2>
+            <div class="social-links row">
+                <div class="col s4 offset-s4 social-icon">
+                    <a href="https://github.com/A-Sandwich"><i class="fab fab fa-github fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/A_Sandwich"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/a_sandwich/"><i class="fab fa-instagram fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/kyle-burkholder-9bb22613a/"><i class="fab fab fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="divider"></div>
 
+        <section class="about flow-text">
+
+        </section>
+    </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="{% static 'portfolio/materialize/js/materialize.min.js' %}"></script>
 </body>
