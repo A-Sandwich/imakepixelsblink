@@ -11,6 +11,7 @@
     <link type="text/css" rel="stylesheet" href="{% static 'portfolio/materialize/css/materialize.min.css' %}"  media="screen,projection"/>
 
     <link type="text/css" rel="stylesheet" href="{% static 'portfolio/css/main.css' %}"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'portfolio/css/consoleText.css' %}"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -21,7 +22,7 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="header">Kyle Burkholder</h1>
+            <div class="no-wrap"><h1 class="header" id="console-text"></h1></div>
             <h2 class="header">I make pixels move.</h2>
             <h2 class="header">usually with Python, C#, and JavaScript.</h2>
             <div class="social-links row">
@@ -34,13 +35,17 @@
             </div>
         </header>
         <div class="divider"></div>
-
+            <h2>About</h2>
+            <p class="flow-text">
+                I am a software engineer who loves working in and on the web. I have found myself working in many different tech stacks and always love a new challange. When I’m not coding you can usually find me experimenting with a new recipe, spoiling my cats, or going on a run.
+            </p>
         <section class="about flow-text">
 
         </section>
     </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="{% static 'portfolio/materialize/js/materialize.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'portfolio/js/consoleText.js' %}"></script>
 </body>
 
 </html>
