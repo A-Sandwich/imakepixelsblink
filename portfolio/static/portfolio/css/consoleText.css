@@ -1,0 +1,7 @@
+.hidden {
+    color: rgb(255, 249, 240);
+}
+
+.no-wrap {
+  white-space: nowrap ;
+}
