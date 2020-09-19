@@ -16,5 +16,7 @@ h2 {
 }
 
 body {
+    margin-top: 2em;
     background-color: rgb(255, 249, 240);
+    font-family: 'Bebas Neue', cursive;
 }
