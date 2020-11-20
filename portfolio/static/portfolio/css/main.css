@@ -20,3 +20,7 @@ body {
     background-color: rgb(255, 249, 240);
     font-family: 'Bebas Neue', cursive;
 }
+
+.btn {
+    margin-top: 0.5em;
+}
