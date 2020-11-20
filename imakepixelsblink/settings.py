@@ -115,5 +115,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+if os.environ['ENVIRONMENT'] != 'DEVELOPMENT':
+    SECURE_SSL_REDIRECT = True
+
 # Activate Django-Heroku.
 django_heroku.settings(locals())
